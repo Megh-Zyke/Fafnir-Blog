@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+
+<div class="intro">
+  <h1 class="heading"> Welcome <span class="user"><%= User %></span>  </h1>
+  <p class="intro-para">Click anywhere to check your feed</p>
+</div>
+
+<div class="posts">
+  <h1 class="upload MAIN">Home Page</h1>
+  <% Post.reverse().forEach(function(post){ %>
+    <div class="post">
+      <div class="info">
+        <i>Posted by User : <a href="/user/<%= post.username %>" ><%= post.username %>  </a></i>
+        <i>Posted On : <%=  post.date%></i>
+      </ul></div>
+      
+      <div class="ImagE">
+      <div class="image-border">
+        <a href="/posts/<%= post.title %>">
+        <img src=<%= post.imagePath.slice(6,post.imagePath.length) %> alt= <%= post.imagePath.slice(6,post.imagePath.length) %> class="image">
+      </a>
+      </div>
+      
+    </div>
+      <h2 class="post-title"><%= post.title %></h2>
+      <p class="post-text"><%= post.content.substring(0,30) %>...</p>
+      <a href="/posts/<%= post.title %>">Read More</a>
+    </div>
+  <% }) %>
+</div>
+    
+    <p class="LogOut"><a class="btn btn-light btn-lg " href="/logout" role="button"> Log Out  <span class="material-symbols-outlined">
+      logout
+      </span></a></p>
+      
+  <a class="btn btn-dark btn-lg HomePage" href="/Main" role="button">Home Page</a>
+    
+  <a class="btn btn-dark btn-lg uploadPost" href="/submit" role="button">New Post</a>
+  
+
+  <a class="btn btn-dark btn-lg UserPage" href="/user" role="button">User</a>
+    
+    
+    <form class="form-inline search " method="POST" action="/posts">
+      <input class="form-control mr-sm-2"  type="search" placeholder="Search" name="search"  autocomplete= "off" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"  >Search</button>
+    </form>
+
+<%- include('partials/footer') %>
