@@ -10,7 +10,7 @@
   <% Post.reverse().forEach(function(post){ %>
     <div class="post">
       <div class="info">
-        <i>Posted by User : <a href="/user/<%= post.username %>" ><%= post.username %>  </a></i>
+        <i>Posted by User : <a href="/users/<%= post.username %>" ><%= post.username %>  </a></i>
         <i>Posted On : <%=  post.date%></i>
       </ul></div>
       
