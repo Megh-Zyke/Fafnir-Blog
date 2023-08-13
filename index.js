@@ -229,7 +229,7 @@ app.get("/user" , function(req, res){
 }
 });
 
-app.get("/user/:userId" , function(req, res){
+app.get("/users/:userId" , function(req, res){
     if(!req.isAuthenticated()){
         res.redirect("/login");
     }else{
