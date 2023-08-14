@@ -166,7 +166,7 @@ input{
 
 .LogOut{
     position: absolute;
-    top: 15%;
+    top: 5%;
     left: 90%;
 }
 
@@ -176,15 +176,15 @@ input{
     left: 2%;
 }
 .UserPage {
-    top: 15%;
+    top: 5%;
     position: absolute;
-    left: 2%;
+    left: 12%;
 }
 
 .HomePage{
     position: absolute;
-    top: 25%;
-    left: 2%;
+    top: 5%;
+    left: 18%;
 }
 .active{
     display: block;
@@ -255,7 +255,7 @@ input{
 .search{
     position: absolute;
     top:5%;
-    left:81%;
+    left:70%;
 }
 
 #content{
