@@ -1,4 +1,17 @@
 <%- include('partials/header') %>
+<div class="buttonsMain">
+  <div class="main-btn-fnc"> 
+      <a class="btn " href="/Main" role="button"> <i class="fa-solid fa-2x fa-house"></i> </a>
+      <a class="btn " href="/submit" role="button"><i class="fa-solid fa-2x fa-plus"></i> </a>
+      <a class="btn " href="/user" role="button"><i class="fa-solid fa-2x fa-user"></i> </a>
+  </div>
+  
+
+  <div class="log-out-btn">
+      <a class="btn" href="/logout" role="button"> <i class="fa-solid fa-2x fa-right-from-bracket"></i></a>
+  </div>
+  
+</div>
 
 <div class="intro">
   <h1 class="heading"> Welcome <span class="user"><%= User %></span>  </h1>
@@ -10,7 +23,7 @@
   <% Post.reverse().forEach(function(post){ %>
     <div class="post">
       <div class="info">
-        <i>Posted by User : <a href="/users/<%= post.username %>" ><%= post.username %>  </a></i>
+        <i>Posted by User : <a href="/user/<%= post.username %>" ><%= post.username %>  </a></i>
         <i>Posted On : <%=  post.date%></i>
       </ul></div>
       
