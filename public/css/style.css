@@ -47,12 +47,15 @@
   .centered{
     animation: appear 1s ease-in-out;
   }
-
+*{
+    transition:  all 0.5s ease-in-out;
+}
 body {
     background-color: #E8ECEF;
+    
   }
-  
-  .centered {
+
+.centered {
       padding-top: 200px;
       text-align: center;
   }
@@ -67,10 +70,12 @@ body {
   .display-3 , .Login , .register{
 
     font-family: 'Rye', cursive;
+    transition:  all 0.15s ease-in-out;
   }
 
   .lead , label{
     font-family: 'Homemade Apple', cursive;
+    transition:  all 0.5s ease-in-out;
 
   }
 
@@ -472,3 +477,10 @@ input{
     border: white;
     background-color: #fff;
 }
+
+.buttonsMain{
+    display: none;
+}
+
+
+
