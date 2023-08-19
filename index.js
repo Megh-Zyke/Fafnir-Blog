@@ -108,9 +108,14 @@ app.get("/" , function(req, res){
 
 app.post("/posts" , function(req, res){
     var post = req.body.search;
+    
     var link = "/posts/" + post;
     
-        res.redirect(link);
+    if(link == "/posts/"){
+        res.redirect("/Main");
+    }
+    else{
+        res.redirect(link);}
 }); 
 
 
@@ -229,7 +234,7 @@ app.get("/user" , function(req, res){
 }
 });
 
-app.get("/users/:userId" , function(req, res){
+app.get("/user/:userId" , function(req, res){
     if(!req.isAuthenticated()){
         res.redirect("/login");
     }else{
