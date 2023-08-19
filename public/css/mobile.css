@@ -1,0 +1,159 @@
+@media (max-width: 500px) {
+    
+    .display-3{
+        display: none;
+    }
+
+    .lead{
+        margin-top: 35px;
+        font-size: 1rem;
+    }
+
+    .intro{
+        transform: scale(0.65);
+        margin-top: 15%;
+    }
+
+    .posts{
+        margin: 20% 3%;
+    }
+    .post{
+        width: 400px;
+        
+    }
+
+    .post-text{
+        display: none;
+    }
+
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .upload.MAIN{
+      
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .search{
+        justify-content: center;
+    width: 50%;
+    display: flex;
+    /* margin-left: -347px; */
+    position: absolute;
+    left: 37%;
+    top: 4.2%;
+    }
+
+
+    .posts.active.POST {
+        margin-top: 25%;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+
+    .postTitle{
+        font-size: 1.5rem;
+    }
+
+    .comments{
+        width: 95%;
+        position: fixed;
+        left: 2.5%;
+        z-index: 3;
+        top: 20%;
+    }
+
+    #com{
+        width: 100%;
+        margin: 0;
+        margin-bottom:20px;
+    }
+
+    .posts{
+        width: 100%;
+        transform: scale(0.95);
+        margin-top: 0;
+        margin-left:0;
+    }
+
+    .posts form{
+        transform: scale(0.95);
+    }
+    .upload{
+        position: relative;
+        font-size: 2rem;
+        margin-top: 20%;
+        
+    }
+    .posts-User{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .posts-border{
+        width: 100%;
+        margin: 0;
+        
+    }
+    .img-Post{
+        width: 100%;
+    }
+    .user-icon{
+        width: 100%;
+        margin: 0;
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .user-border{
+        width: 50%;
+        margin: 0;
+        margin-top:10%;
+    }
+
+    .user-name{
+        font-size: 2.5rem;
+        width: 100%;
+        margin:0 ;
+        position: absolute;
+        text-align: center;
+    }
+
+    .data-posts{
+        font-size: 2.5rem;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        
+    }
+    
+    
+    .material-symbols-outlined{
+        border-radius: 50%;
+    }
+
+    .LogOut , .HomePage , .uploadPost, .UserPage{
+        display: none;
+    }
+
+
+    .buttonsMain{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        
+    }
+
+  
+    
+}
